@@ -1,8 +1,8 @@
 name: Run Official Flop Stealth Agent
 on:
   schedule:
-    - cron: '0 * * * *' # Automated run every hour on GitHub cloud infrastructure
-  workflow_dispatch: # Allows manual trigger via a simple button at any time
+    - cron: '15 2,7,13,19,22 * * *'
+  workflow_dispatch:
 
 jobs:
   start-agent:
