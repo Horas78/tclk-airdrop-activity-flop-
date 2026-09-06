@@ -1,0 +1,26 @@
+name: Run Official Flop Stealth Agent
+on:
+  schedule:
+    - cron: '0 * * * *' # Automated run every hour on GitHub cloud infrastructure
+  workflow_dispatch: # Allows manual trigger via a simple button at any time
+
+jobs:
+  start-agent:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Network Dependencies
+        run: |
+          if [ -f package.json ]; then
+            npm install
+          fi
+
+      - name: Execute Stealth Core Cycle
+        run: node index.js
