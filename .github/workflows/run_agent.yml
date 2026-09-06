@@ -24,3 +24,5 @@ jobs:
 
       - name: Execute Stealth Core Cycle
         run: node index.js
+        env:
+          MY_SECRET_SEED: ${{ secrets.MY_SECRET_SEED }}
