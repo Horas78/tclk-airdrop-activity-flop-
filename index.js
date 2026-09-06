@@ -2,7 +2,7 @@
 // 🛡️ FLOP LABS OFFICIAL TCLK/1 HUMANOID STEALTH AGENT V1
 // =======================================================
 
-const crypto = require('crypto');
+import crypto from 'crypto';
 
 const CORE_CONFIG = {
     // 1. User Decentralized Identifier (Payer DID)
@@ -80,7 +80,7 @@ async function runOfficialTclkCycle() {
     console.log(`\n⚙️ [tclk/1 CYCLE - Primary Stealth Contract Execution #${CORE_CONFIG.sessionCounter}]`);
     console.log(`1️⃣ Formulating canonical offer frame payload: ID=${contractId} | Amount=${dynamicAmount} FLOP`);
 
-    // Building the normative fail-closed مصغر micro-payload required by the developer guidelines
+    // Building the normative fail-closed micro-payload required by the developer guidelines
     const framePayload = {
         tclk1: "offer",
         id: contractId,
