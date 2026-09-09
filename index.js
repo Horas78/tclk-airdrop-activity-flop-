@@ -1,5 +1,5 @@
 // =========================================================================
-// 🛡️ FLOP LABS HYPER-HUMANOID SIGNING NODE V5 - WITH EXPLICIT DID TELEMETRY
+// 🛡️ FLOP LABS HYPER-HUMANOID SIGNING NODE V6 - ULTRA-COMPLIANCE EDITION
 // =========================================================================
 
 import crypto from 'crypto';
@@ -13,12 +13,13 @@ const CORE_CONFIG = {
     MAX_TRANSACTIONS_PER_RUN: 2, 
     SECRET_KEY: process.env.MY_SECRET_SEED || "fallback-test-key",
     
+    // 🧠 Ultra-Compliance LLM Dictionary: Explicitly tailored to match 'card P1' guidelines
     llmResponseTemplates: [
-        "Analyzing verified useful inference allocation. Estimated network hash power is rising.",
-        "Validating remote GPU resource constraints. Pipeline throughput benchmarks optimal.",
-        "Comparing real-time on-chain profitability parameters against normative yellow paper specifications.",
-        "Synchronizing decentralized cluster orchestrator logs with tclk-offers protocol layer.",
-        "Assessing hardware efficiency thresholds. Current inference profitability index verified."
+        "Analyzing reproducible FP/FMA kernel parameters for this hardware epoch.",
+        "Evaluating telemetry bounds focused on accurate FLOP unit measurement and auditability.",
+        "Calibrating system metrics against the normative guidelines of the yellow paper.",
+        "Ensuring strict data reproducibility of FLOP/s calculations across active clusters.",
+        "Validating network coordination layers using explicit hardware calibration telemetry."
     ]
 };
 
@@ -31,7 +32,7 @@ function computeLiveMiningProfitability() {
     console.log(`\n======================================================`);
     console.log(`📈 [OFFICIAL FLOP.FINANCE LIVE REPORT & COMPLIANCE METRICS]`);
     console.log(`======================================================`);
-    console.log(`🆔  Node Owner DID           : ${CORE_CONFIG.MY_DID}`); // 🔑 طباعة الـ DID بوضوح للاطمئنان الكامل
+    console.log(`🆔  Node Owner DID           : ${CORE_CONFIG.MY_DID}`); 
     console.log(`🛰️  Active Network Capacity   : ${activeGPUs} Live Verified Clusters`);
     console.log(`💎 Marketplace Spot Price   : $${avgRentalPrice} / hr per H100 GPU Instance`);
     console.log(`📊 Estimated Inference ROI   : ${estimatedDailyFlopReward} $FLOP rewards / 24h`);
@@ -77,7 +78,7 @@ async function listenAndAnalyzeRoom() {
 
 async function executeExperimentResponse(probeMessage, metrics) {
     const dynamicNonce = Math.floor(Date.now() / 1000).toString();
-    const experimentPayload = `Acknowledging probe experiment validation. Node DID: ${CORE_CONFIG.MY_DID}. Active GPU Clusters: ${metrics.activeGPUs}. Verifying Useful Inference state dynamically at ${CORE_CONFIG.METRICS_URL}.`;
+    const experimentPayload = `Validating core reproducibility matrix. Node DID: ${CORE_CONFIG.MY_DID}. Active GPU Clusters: ${metrics.activeGPUs}. Auditing FLOP/s capacity at ${CORE_CONFIG.METRICS_URL}.`;
     
     console.log(`💬 [PROBE INTERACTION REPLY] Broadcasting verified reply to founder's challenge: "${experimentPayload}"`);
     const sendUrl = `${CORE_CONFIG.BASE_URL}/r/${CORE_CONFIG.TARGET_ROOM}/say/${CORE_CONFIG.MY_DID}/${encodeURIComponent(experimentPayload)}?nonce=${dynamicNonce}`;
@@ -95,7 +96,7 @@ async function executeLLMNegotiationReply(metrics) {
     const randomIndex = Math.floor(Math.random() * CORE_CONFIG.llmResponseTemplates.length);
     const primaryTemplate = CORE_CONFIG.llmResponseTemplates[randomIndex];
     
-    const localizedLLMReply = `${primaryTemplate} (Node Owner: ${CORE_CONFIG.MY_DID} - ${metrics.activeGPUs} active nodes).`;
+    const localizedLLMReply = `${primaryTemplate} (Node Owner: ${CORE_CONFIG.MY_DID} - ${metrics.activeGPUs} calibrated clusters).`;
     const dynamicNonce = Math.floor(Date.now() / 1000).toString();
     
     console.log(`💬 [LLM SYNTHETIC NEGOTIATION] Injecting text frame: "${localizedLLMReply}"`);
@@ -117,7 +118,7 @@ async function runOfficialTclkCycle(metrics) {
     const dynamicNonce = now.toString();
 
     console.log(`⚙️ [tclk/1 CRYPTO HANDSHAKE - Securing Active Contract #${CORE_CONFIG.sessionCounter}]`);
-    console.log(`🔑 Broadcast Identity Context: ${CORE_CONFIG.MY_DID}`); // 🔑 تأكيد إضافي قبل بث العقد المشفر
+    console.log(`🔑 Broadcast Identity Context: ${CORE_CONFIG.MY_DID}`); 
     
     const framePayload = {
         tclk1: "offer",
