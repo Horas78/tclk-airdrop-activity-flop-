@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.2.2 # ترقية دقيقة لأحدث إصدار فرعي مستقر ومحمي
 
       - name: Setup Node.js Environment
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.2.0 # ترقية دقيقة لإصدار بيئة التشغيل الصافية
         with:
-          node-version: '24' # ترقية الخادم بالكامل إلى نسخة 24 لمواكبة شروط جيت هاب وإلغاء التحذير
+          node-version: '24'
 
       - name: Install Network Dependencies
         run: |
