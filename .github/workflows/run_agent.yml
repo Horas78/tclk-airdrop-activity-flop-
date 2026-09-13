@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node.js Environment
         uses: actions/setup-node@v4
         with:
-          node-version: '24' # الترقية الكاملة والمستقبلية إلى الإصدار 24 لإنهاء التحذير كلياً
+          node-version: '24' # ترقية الخادم بالكامل إلى نسخة 24 لمواكبة شروط جيت هاب وإلغاء التحذير
 
       - name: Install Network Dependencies
         run: |
