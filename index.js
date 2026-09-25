@@ -136,7 +136,7 @@ async function runOfficialTclkCycle(metrics) {
     const cryptographicSignature = crypto.createHmac('sha256', CORE_CONFIG.SECRET_KEY).update(rawDataToSign).digest('hex').substring(0, 32);
 
     const serializedFrame = `insv1 ${now} ${cryptographicSignature} tclk1 ${JSON.stringify(framePayload)}`;
-    const executionUrl = `${CORE_BASE_URL || CORE_CONFIG.BASE_URL}/r/${CORE_CONFIG.TARGET_ROOM}/say/${CORE_CONFIG.MY_DID}/${encodeURIComponent(serializedFrame)}?nonce=${dynamicNonce}`;
+    const executionUrl = `${CORE_CONFIG.BASE_URL}/r/${CORE_CONFIG.TARGET_ROOM}/say/${CORE_CONFIG.MY_DID}/${encodeURIComponent(serializedFrame)}?nonce=${dynamicNonce}`;
 
     const humanDelay = Math.floor(Math.random() * 4000) + 3000; 
 
